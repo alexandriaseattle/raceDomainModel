@@ -1,0 +1,45 @@
+<script>
+
+var name,
+  speed,
+  skill,
+  bike,
+  safetyGear,
+  time,
+  distance;
+
+function Racer(name, speed, skill, bike, safetyGear) {
+  this.name = name;
+  this.speed = speed;
+  this.skill = skill;
+  this.bike = bike;
+  this.safetyGear = safetyGear;
+  }
+
+function Race(racename, distance) {
+  this.racename = racename;
+  this.distance = distance;
+/*this.time = function() {}
+    Here is where the association will come into play, using some calculations and logic to determine how a given Racer's properties will impact the calculation of time to complete an instance of Race.
+  */
+  return this.time;
+  }
+
+var racers = [];
+var tracks = [];
+
+racers.push(new Racer("Speedy", 80, 6, true, true));
+racers.push(new Racer("Poky", 55, 4, true, true));
+
+tracks.push(new Race("Track1", 8));
+tracks.push(new Race("Track2", 14));
+
+console.log(racers[0]);
+console.log(racers[1]);
+
+console.log(tracks[0]);
+console.log(tracks[1]);
+
+
+
+</script>
